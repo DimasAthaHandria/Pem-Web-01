@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <select name="dropdown_img" id="dropdown_img" onchange="gambar()">
+        <option hidden>---Pilih Gambar---</option>
+        <option value="gorila">Gorila</option>
+        <option value="singa">Singa</option>
+        <option value="elang">Elang</option>
+    </select>
+    <br>
+    <img alt="gambar" id="image" />
+    
+    <script>
+        function gambar(){
+            let drop_img = document.getElementById("dropdown_img").value;
+            let image = document.getElementById("image");
+            
+        if (drop_img == "gorila") {
+            image.setAttribute(
+                "src",
+                "https://www.google.com/search?q=gorila&rlz=1C1PRUI_enID959ID973&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj9nayCheT7AhWE_XMBHZNeC8YQ_AUoAXoECAEQAw&biw=1148&bih=673&dpr=1#imgrc=xsfWzmBfnBvtTM"
+            );
+            alert ("ini gambar gorila")
+        }
+        else if (drop_img == "singa") {
+            image.setAttribute(
+                "src"
+                "https://www.google.com/search?q=gambar+singa&rlz=1C1PRUI_enID959ID973&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjtid-whuT7AhUycGwGHRAZAlYQ_AUoAXoECAEQAw&biw=1148&bih=673&dpr=1#imgrc=tTxyJyKJrGtI-M"
+            );
+            alert ("ini gambar singa")
+        }
+        else if (drop_img == "elang") {
+            image.setAttribute(
+                "src"
+                "https://www.google.com/search?q=gambar+elang&rlz=1C1PRUI_enID959ID973&source=lnms&tbm=isch&sa=X&ved=2ahUKEwilh6mthuT7AhXNTmwGHcW7BzYQ_AUoAXoECAEQAw&cshid=1670297443314406&biw=1148&bih=673&dpr=1#imgrc=vLUMNGKWdJunjM"
+            );
+            alert ("ini gambar elang")
+        }
+    }
+    </script>
+</body>
+</html>
